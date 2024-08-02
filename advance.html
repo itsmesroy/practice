@@ -5,19 +5,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
-
+<link href="./advance.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 </head>
 
 <body>
-  <h1 id="heading">Heading1</h1>
-  <p>Hi!</p>
+<div class="center">
+    <h1 id="heading">Heading1</h1>
+    <h2>Basic Counter</h2>
+ 
+  <p>Lets start</p>
   <p id="counter">0</p>
-
+<div class="button">
   <button id="increasingElement">+</button>
   <button id="decreasingElement">-</button>
+</div>
+  <h2>Advance Counter</h2>
+  <p id="counter2">0</p>
+  <input type="text" name="name" placeholder="Enter anything" id="fname">
+  <button id="submit">Submit</button>
+</div>
 
-  
- <script src="./advance.js"></script> 
+<!-- Selecting color -->
+<div class="card">
+<div class="card-body" id="target">
+  Selected color: None
+</div>
+</div>
+
+  <div id="color" class="card m-2 w-25">
+    <div id="red" class="card-body">
+    Red
+    </div>
+  </div>
+
+  <div class="card m-2 w-25">
+    <div id="green" class="card-body">
+   Green
+  </div>
+</div>
+
+  <div class="card m-2 w-25">
+    <div id="yellow" class="card-body">
+   Yellow
+  </div>
+</div>
+
+  <div class="card m-2 w-25">
+    <div id="blue" class="card-body">
+    Blue
+  </div>
+</div>
+</div>
+ <script src="./advance.js" type="module"></script> 
 </body>
 
 </html>
