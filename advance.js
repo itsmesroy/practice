@@ -42,3 +42,15 @@ async function getApiData(){
   return data;
 }
 let getData =await getApiData();
+
+
+// Selecting color
+
+const targetElement=document.getElementById("target");
+const colorElement=document.getElementById("color")
+
+colorElement.addEventListener("click",(eventObj)=>{
+    let finalColor=eventObj.target.id;
+    targetElement.innerHTML=`Selected color: ${finalColor} `;
+    targetElement.style.background= finalColor;
+})
