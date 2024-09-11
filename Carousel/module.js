@@ -18,20 +18,22 @@ teamPillsContainer.addEventListener("click", (e) => {
   const teamContentContainer = document.getElementById(teamContentContainerId);
   // console.log(teamContentContainer);
 
+
   // 2. Create content for selected team
   // 2.1. Get the selected team id
   const selectedTeamId = e.target.id;
-  console.log(selectedTeamId);
+  //console.log(selectedTeamId);
 
   // 2.2. Get the image links for the selected team
   const selectedTeamData = teamsData.find((team) => team.id === selectedTeamId); // Find selected team's data
   const imageLinks = selectedTeamData.images; // Get the list of images for the selected team
-  // console.log(imageLinks);
+   //console.log(imageLinks);
+   //console.log(selectedTeamData);
 
   // 2.3. Get Carousel outer structure
   // 2.4. Overwrite team content container body with the Carousel outer structure
   teamContentContainer.innerHTML = getCarouselOuterStructure();
-  // console.log(teamContentContainer);
+   //console.log(teamContentContainer);
 
   // 2.5. For each image link, append Carousel item with image to "div.carousel-inner" element
   const carouselItemParent = document.getElementById("carousel-item-parent");
