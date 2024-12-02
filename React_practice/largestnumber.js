@@ -7,7 +7,17 @@ const largest=(arr)=>{
     }
     return max;    
 };
-const findMax = (arr)=> largest(arr);
+const findSecondMax = (arr)=> {
+    let max= largest(arr);
+    let second=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>second && arr[i]<max){
+            second=arr[i];
+        }
+    }
+    return second;
+};
     
-let string = [1,23,4,3]
-console.log(findMax(string));
+let string = [1,23,4,6]
+console.log("Largest:",largest(string));
+console.log("Second:",findSecondMax(string))
